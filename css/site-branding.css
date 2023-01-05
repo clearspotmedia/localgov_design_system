@@ -1,0 +1,16 @@
+/*
+  Styles for logo and tagline in Site Branding block 
+*/
+
+/*Adjust logo container to accomodate site slogan (Existing class)*/
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+/*Site slogan (New class)*/
+.branding__item--slogan {
+    margin-left: calc(var(--grid-column-spacing) / 2);
+    color: var(--color-white);
+    font-size: var(--font-size-h3);
+}

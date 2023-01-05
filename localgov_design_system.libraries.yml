@@ -1,0 +1,51 @@
+variables:
+  css:
+    base:
+      # This is called in your localgov_design_system.info.yml file via `libraries-extend`.
+      # This ensures that in the cascade, your variables come after the base theme's
+      # variables.
+      css/variables.css: {}
+
+# New css files for design system interface
+# This is called in localgov_design_system.info.yml file via `libraries`.
+site-branding:
+  css:
+    theme:
+      css/site-branding.css: {}
+
+primary-menu:
+  css:
+    theme:
+      css/primary-menu.css: {}
+
+secondary-menu:
+  css:
+    theme:
+      css/secondary-menu.css: {}
+
+# New js file for design system interface
+# This is called in localgov_design_system.info.yml file via `libraries`.
+
+design-system-js:
+  js:
+    js/design-system.js: {}
+  dependencies:
+    ## - core/drupal
+    - core/jquery
+    ## - core/once
+    ## - core/drupal.debounce
+
+
+
+# To override CSS from the base theme, add your library here, and then use
+# `libraries-extend` to add that code to the library from the base theme. See the
+# localgov_design_system.info.yml file for an example, using this `sample-library`.
+
+# If your CSS is for a new component, and is not going to override existing CSS, you
+# can add that to your component in the usual ways - via `{{ attach_library }}` or a
+# preprocess hook, or similar approach.
+
+# sample-library-2
+#   css:
+#     theme:
+#       css/sample.css: {}

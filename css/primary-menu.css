@@ -1,0 +1,96 @@
+/*
+  Styles for full width menu placed in the Full Width Menu region
+*/
+
+/*Design system primary menu in header (New class added in menu settings)*/
+.ds-menu__primary {
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  background: var(--color-black);
+}
+
+/*Design system primary menu ul (New class)*/
+.ds-menu__primary ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  /*Design system primary menu ul horizontal on desktop (New class)*/
+  .ds-menu__primary ul {
+    width: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: inherit;
+    max-width: var(--width-container);
+  }
+}
+
+/*Design system primary menu items (New class)*/
+.ds-menu__primary ul li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-family: "Mulish", sans-serif;
+  padding: 0;
+  font-size: var(--font-size-h3);
+}
+
+@media screen and (min-width: 48rem) {
+  /*Design system primary menu ul horizontal on desktop (New class)*/
+  .ds-menu__primary ul li {
+    flex-wrap: nowrap;
+    font-size: var(--font-size-h3);
+  }
+}
+
+/*Design system primary menu all links fill space on mobile, hidden on desktop so no need to reset (New class)*/
+.ds-menu__primary ul li a {
+  display: flex;
+  flex: 1;
+  align-self: stretch;
+  padding: calc(var(--grid-column-spacing) / 2) calc(var(--grid-column-spacing) / 1);
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/*Design system primary menu sub links smaller (New class)*/
+.ds-menu__primary ul li ul li a {
+  font-size: var(--font-size);
+}
+
+/*Design system primary menu active link (New class)*/
+.ds-menu__primary ul li.menu-item--active-trail a {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+/*Design system primary menu active link (New class)*/
+.ds-menu__primary ul li a:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/*Design system primary menu focus (New class)*/
+.ds-menu__primary ul li a:hover {
+  background: var(--color-focus);
+  color: var(--color-black);
+  border: 0;
+}
+
+/*Show sub links in main nav (top) on mobile (New class)*/
+.ds-menu__primary ul li ul {
+  display: flex;
+}
+
+@media screen and (min-width: 48rem) {
+  /*Hide sub links in main nav (top) on desktop (New class)*/
+  .ds-menu__primary ul li ul {
+    display: none;
+  }
+}
