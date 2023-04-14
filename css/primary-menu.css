@@ -1,6 +1,30 @@
 /*
-  Styles for full width menu placed in the Full Width Menu region
+  Styles for the design system menu placed in the Primary Menu region
 */
+
+/*Adjust the LocalGov nav primary wrapper so it displays on a new row and full width*/
+#lgd-header__nav--primary {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: var(--spacing);
+}
+
+/*Remove padding below primary nav and */
+.lgd-header {
+  padding-bottom: 0;
+}
+
+/*Adjust the LocalGov inner header class to fix left alignment of logo*/
+.lgd-header__inner {
+  justify-content: start;
+}
+
+/*Closes up unwanted space to left of primary meny toggle when hidden*/
+.lgd-header__toggles {
+  margin-left: 0;
+}
 
 /*Design system primary menu in header (New class added in menu settings)*/
 .ds-menu__primary {

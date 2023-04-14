@@ -11,17 +11,17 @@ variables:
 site-branding:
   css:
     theme:
-      css/site-branding.css: {}
+      css/site-branding.css: { weight: 200 }
 
 primary-menu:
   css:
     theme:
-      css/primary-menu.css: {}
+      css/primary-menu.css: { weight: 200 }
 
 secondary-menu:
   css:
     theme:
-      css/secondary-menu.css: {}
+      css/secondary-menu.css: { weight: 200 }
 
 # New js file for design system interface
 # This is called in localgov_design_system.info.yml file via `libraries`.
