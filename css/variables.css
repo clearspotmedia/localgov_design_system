@@ -34,15 +34,21 @@
 */
 body {
   /* Set Variables */
+  
+  --color-blue: #20466c;
   --color-accent: var(--color-black);
   --color-accent-alt: var(--color-black);
-  --breadcrumbs-link-color: var(--color-black);
   --font-primary: "Inter", arial, sans-serif;
   --font-secondary: var(--font-primary), sans-serif;
-  --sidebar-exposed-form-bg-color: var(--color-grey-lightest);
+  --spacing-padding-horizontal: 0;
+  --grid-column-spacing: var(--spacing-large);
 
   /* Apply Variables */
   --breadcrumbs-divider: ">";
+  --color-link: var(--color-blue);
+  --color-section-header-bg: var(--color-blue);
+  --breadcrumbs-link-color: var(--color-black);
+  --sidebar-exposed-form-bg-color: var(--color-grey-lightest);
 }
 
 

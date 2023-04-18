@@ -14,6 +14,7 @@
 /*Remove padding below primary nav and */
 .lgd-header {
   padding-bottom: 0;
+  margin-bottom: var(--spacing-larger);
 }
 
 /*Adjust the LocalGov inner header class to fix left alignment of logo*/
@@ -30,7 +31,6 @@
 .ds-menu__primary {
   font-family: "Mulish", sans-serif;
   text-decoration: none;
-  background: var(--color-black);
 }
 
 /*Design system primary menu ul (New class)*/

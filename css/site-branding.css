@@ -4,13 +4,20 @@
 
 /*Adjust logo container to accomodate site slogan (Existing class)*/
 .branding {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /*Site slogan (New class)*/
 .branding__item--slogan {
-    margin-left: calc(var(--grid-column-spacing) / 2);
-    color: var(--color-white);
-    font-size: var(--font-size-h3);
+  margin-left: calc(var(--grid-column-spacing) / 2);
+  color: var(--color-white);
+  font-size: var(--font-size-h3);
+}
+
+/*Taxonomy tags on design system page*/
+.field--name-cds-ds-taxonomy-terms .field__item {
+  display: inline;
+  margin-right: var(--spacing);
+  margin-bottom: var(--spacing-larger);
 }
