@@ -66,12 +66,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 //Change wording on LocalGov Search module header search
 document.addEventListener('DOMContentLoaded', function () {
   //Header LocalGov Search container (present in header only)
-  var elem = document.getElementById('views-exposed-form-cds-design-system-group-search-search-page');
+  var elem = document.getElementById('views-exposed-form-localgov-sitewide-search-sitewide-search-page-block');
   if (elem) {
     // Change the wording of the search submit button in the header bar
-    document.getElementById('views-exposed-form-cds-design-system-group-search-search-page').querySelector("input[type=submit]").value = 'Search';
+    document.getElementById('views-exposed-form-localgov-sitewide-search-sitewide-search-page-block').querySelector("input[type=submit]").value = 'Search';
     // Change the wording of the search field placeholder in the header bar 
-    document.getElementById('views-exposed-form-cds-design-system-group-search-search-page').querySelector("input[type=text]").placeholder = 'Search design system';
+    document.getElementById('views-exposed-form-localgov-sitewide-search-sitewide-search-page-block').querySelector("input[type=text]").placeholder = 'Search Design System';
   }
 });
 
@@ -83,6 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Change the wording of the search submit button in the search page
     document.getElementById('views-exposed-form-localgov-sitewide-search-sitewide-search-page').querySelector("input[type=submit]").value = 'Search';
     // Change the wording of the search field label in the search page
-    document.getElementById('views-exposed-form-localgov-sitewide-search-sitewide-search-page').querySelector("label").innerText = 'Search design system';
+    document.getElementById('views-exposed-form-localgov-sitewide-search-sitewide-search-page').querySelector("label").innerText = 'Search Design System';
   }
 });
