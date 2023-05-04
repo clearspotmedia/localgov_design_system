@@ -1,0 +1,7 @@
+{
+    "name": "clearspotmedia/localgov_design_system",
+    "description": "Design system subtheme.",
+    "type": "drupal-theme",
+    "homepage": "https://github.com/clearspotmedia/localgov_design_system",
+    "license": "GPL-3.0-or-later"
+}
