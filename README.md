@@ -16,11 +16,11 @@ The front end interface closely replicates the GDS design system navigation stru
 
 Summary of features with both theme and module installed:
 
-• designed to be installed as a LocalGov microsite or a standard LocalGov Drupal site installation (Standard installation to be tested)
-• search the design system with LocalGov search
-• new paragraph type for adding headed sections and content in design system pages
-• automatic contents menu based on page section headings
-• taxonomy to show platform support for components
-• responsive primary and secondary navigations
-• simple white labelled sub theme that uses LocalGov Base as its base theme
-• improved functionality for editors with page sections paragraph type and automatic contents menus
+* designed to be installed as a LocalGov microsite or a standard LocalGov Drupal site installation (Standard installation to be tested)
+* search the design system with LocalGov search
+* new paragraph type for adding headed sections and content in design system pages
+* automatic contents menu based on page section headings
+* taxonomy to show platform support for components
+* responsive primary and secondary navigations
+* simple white labelled sub theme that uses LocalGov Base as its base theme
+* improved functionality for editors with page sections paragraph type and automatic contents menus
