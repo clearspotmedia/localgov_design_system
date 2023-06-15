@@ -23,4 +23,3 @@ Summary of features with both theme and module installed:
 * taxonomy to show platform support for components
 * responsive primary and secondary navigations
 * simple white labelled sub theme that uses LocalGov Base as its base theme
-* improved functionality for editors with page sections paragraph type and automatic contents menus
