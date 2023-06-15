@@ -16,6 +16,7 @@ libraries:
   - localgov_design_system/site-branding
   - localgov_design_system/primary-menu
   - localgov_design_system/secondary-menu
+  - localgov_design_system/taxonomy
   - localgov_design_system/design-system-js
   # Add libraries here that extend specific libraries.
   # localgov_base/sample-library:

@@ -1,39 +1,58 @@
-/*
-  Styles for the design system menu placed in the Primary Menu region
-*/
+/* 
+  Styles for the design system primary menu placed in the Primary Menu region
+ */
 
-/*Adjust the LocalGov nav primary wrapper so it displays on a new row and full width*/
-#lgd-header__nav--primary {
-  flex-wrap: wrap;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: var(--spacing);
-}
-
-/*Remove padding below primary nav and */
+ /* Remove padding from lgd header so nav can be flush */
 .lgd-header {
   padding-bottom: 0;
   margin-bottom: var(--spacing-larger);
 }
 
-/*Adjust the LocalGov inner header class to fix left alignment of logo*/
+/* Adjust the LocalGov inner header class to fix left alignment of logo */
 .lgd-header__inner {
   justify-content: start;
 }
 
-/*Closes up unwanted space to left of primary meny toggle when hidden*/
-.lgd-header__toggles {
-  margin-left: 0;
+/* AMake the logo and site label align left while the search and menu toggle aligns right */
+.lgd-header__inner .lgd-region--header{
+  margin-right: auto;
 }
 
-/*Design system primary menu in header (New class added in menu settings)*/
+/* Group the search and toggles for better responsivness */
+.ds-container__search_toggle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Closes up unwanted space to left and right of primary menu toggle */
+.lgd-header__toggles {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Adjust the LocalGov nav primary wrapper so it displays on a new row and full width */
+#lgd-header__nav--primary {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: var(--spacing);
+}
+
+@media screen and (min-width: 48rem) {
+  /* No margin below the nav on desktop so tabs are flush */
+  #lgd-header__nav--primary {
+    margin-bottom: 0;
+  }
+}
+
+/* Design system primary menu in header (New class added in menu settings) */
 .ds-menu__primary {
-  font-family: "Mulish", sans-serif;
   text-decoration: none;
 }
 
-/*Design system primary menu ul (New class)*/
+/* Design system primary menu ul */
 .ds-menu__primary ul {
   display: flex;
   width: 100%;
@@ -45,7 +64,7 @@
 }
 
 @media screen and (min-width: 48rem) {
-  /*Design system primary menu ul horizontal on desktop (New class)*/
+  /* Design system primary menu ul horizontal on desktop */
   .ds-menu__primary ul {
     width: auto;
     flex-wrap: nowrap;
@@ -55,66 +74,119 @@
   }
 }
 
-/*Design system primary menu items (New class)*/
+/* Design system primary menu items */
 .ds-menu__primary ul li {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  font-family: "Mulish", sans-serif;
   padding: 0;
   font-size: var(--font-size-h3);
 }
 
 @media screen and (min-width: 48rem) {
-  /*Design system primary menu ul horizontal on desktop (New class)*/
+  /* Design system primary menu ul horizontal on desktop */
   .ds-menu__primary ul li {
     flex-wrap: nowrap;
-    font-size: var(--font-size-h3);
   }
 }
 
-/*Design system primary menu all links fill space on mobile, hidden on desktop so no need to reset (New class)*/
+/* Design system primary menu links */
 .ds-menu__primary ul li a {
   display: flex;
   flex: 1;
   align-self: stretch;
-  padding: calc(var(--grid-column-spacing) / 2) calc(var(--grid-column-spacing) / 1);
+  padding: calc(var(--grid-column-spacing) / 2) calc(var(--grid-column-spacing) / 2);
   text-decoration: none;
+  color: var(--color-white);
+  border-left: 3px solid transparent;
+}
+
+/* Design system primary menu link hover */
+.ds-menu__primary ul li a:hover {
+  background: var(--color-accent);
   color: var(--color-white);
 }
 
-/*Design system primary menu sub links smaller (New class)*/
+/* Design system primary menu link focus */
+.ds-menu__primary ul li a:focus {
+  background: var(--color-focus);
+  color: var(--color-black);
+  outline: none;
+}
+
+/* Design system primary menu sub links smaller */
 .ds-menu__primary ul li ul li a {
   font-size: var(--font-size);
 }
 
-/*Design system primary menu active link (New class)*/
-.ds-menu__primary ul li.menu-item--active-trail a {
+/* Design system primary menu wrapper for active parent and chillen */
+.ds-menu__primary li.is-active-trail {
+  background: var(--color-white);
+}
+
+/* Design system primary menu active link, when on parent or child page */
+.ds-menu__primary .nav-item.is-active-trail a,
+.ds-menu__primary .nav-link.is-active a {
   background: var(--color-white);
   color: var(--color-primary);
 }
 
-/*Design system primary menu active link (New class)*/
-.ds-menu__primary ul li a:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
+/* Design system primary menu active parent page links mobile */
+.ds-menu__primary .nav-item.is-active-trail a.nav-link.is-active {
+  font-weight: 700;
+  border-left: 3px solid var(--color-blue);
+  padding-left: 0.75rem;
+  margin-left: var(--spacing-small);
+  margin-top: var(--spacing-small);
 }
 
-/*Design system primary menu focus (New class)*/
-.ds-menu__primary ul li a:hover {
-  background: var(--color-focus);
-  color: var(--color-black);
-  border: 0;
+@media screen and (min-width: 48rem) {
+  /* Design system primary menu active parent page links desktop */
+  .ds-menu__primary .nav-item.is-active-trail a.nav-link.is-active {
+    font-weight: 400;
+    padding-left: var(--spacing-small);
+    padding-top: 0;
+    margin-left: 0;
+    border-left: 0;
+  }
 }
 
-/*Show sub links in main nav (top) on mobile (New class)*/
-.ds-menu__primary ul li ul {
+/* Design system primary menu wrapper padding at bottom under last child mobile*/
+.ds-menu__primary li.is-active-trail:last-child {
+  padding-bottom: var(--spacing-small);
+}
+
+
+@media screen and (min-width: 48rem) {
+
+/* Design system primary menu wrapper padding at bottom under last child desktop*/
+  .ds-menu__primary li.is-active-trail:last-child  {
+    padding-bottom: 0;
+  }
+}
+
+/* Design system primary menu active child page links */
+.ds-menu__primary .nav-item.is-active-trail .nav-item.is-active-trail a {
+  font-weight: 700;
+  border-left: 3px solid var(--color-blue);
+  padding-left: 0.75rem;
+  margin-left: var(--spacing);
+}
+
+
+/* Show sub links in primary menu on mobile */
+.ds-menu__primary .nav-item ul {
   display: flex;
 }
 
 @media screen and (min-width: 48rem) {
-  /*Hide sub links in main nav (top) on desktop (New class)*/
-  .ds-menu__primary ul li ul {
+  /* Hide sub links in primary menu on desktop */
+  .ds-menu__primary .nav-item ul {
     display: none;
   }
+}
+
+/* Mobile menu toggle */
+.lgd-header__toggle {
+  padding: var(--spacing-small);
 }

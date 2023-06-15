@@ -1,0 +1,19 @@
+/*
+  Styles for taxonomy terms and pages
+*/
+
+/* Taxonomy tags wrapper on design system page */
+.field--name-cds-ds-taxonomy-terms {
+  margin-bottom: var(--spacing-larger);
+}
+
+/* Taxonomy tags on design system page */
+.field--name-cds-ds-taxonomy-terms .field__item {
+  display: inline;
+  margin-right: var(--spacing);
+}
+
+/* Hide RSS subscribe link on taxonomy page */
+.feed-icons {
+  display: none;
+}

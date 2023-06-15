@@ -23,19 +23,17 @@ secondary-menu:
     theme:
       css/secondary-menu.css: { weight: 200 }
 
+taxonomy:
+  css:
+    theme:
+      css/taxonomy.css: { weight: 200 }
+
 # New js file for design system interface
 # This is called in localgov_design_system.info.yml file via `libraries`.
 
 design-system-js:
   js:
     js/design-system.js: {}
-  dependencies:
-    ## - core/drupal
-    - core/jquery
-    ## - core/once
-    ## - core/drupal.debounce
-
-
 
 # To override CSS from the base theme, add your library here, and then use
 # `libraries-extend` to add that code to the library from the base theme. See the

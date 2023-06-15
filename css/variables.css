@@ -34,13 +34,13 @@
 */
 body {
   /* Set Variables */
-  
+
   --color-blue: #20466c;
   --color-accent: var(--color-black);
   --color-accent-alt: var(--color-black);
   --font-primary: "Inter", arial, sans-serif;
   --font-secondary: var(--font-primary), sans-serif;
-  --spacing-padding-horizontal: 0;
+  --spacing-padding-horizontal: var(--spacing);
   --grid-column-spacing: var(--spacing-large);
 
   /* Apply Variables */
@@ -50,5 +50,3 @@ body {
   --breadcrumbs-link-color: var(--color-black);
   --sidebar-exposed-form-bg-color: var(--color-grey-lightest);
 }
-
-
