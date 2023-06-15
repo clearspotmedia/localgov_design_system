@@ -9,9 +9,10 @@ This theme inlcudes the necessary CSS and twig templates to make the CDS Design 
 https://github.com/clearspotmedia/cds_design_system
 
 ## What the theme does
-When running both the the Design System theme and module, you will have access to a new design system content type and menus.
-Improved functionality for editors with page sections and automatic contents menus.
+When running both the the Design System theme and module, you will have access to a new design system content type. Your design system pages can assigned as parent or child pages creating sections. These sections and child pages are output into well considered responsive menus for navigation.
+
 The front end interface closely replicates the GDS design system navigation structure.  https://design-system.service.gov.uk/
+
 
 Summary of features with both theme and module installed:
 
@@ -19,6 +20,7 @@ Summary of features with both theme and module installed:
 • search the design system with LocalGov search
 • new paragraph type for adding headed sections and content in design system pages
 • automatic contents menu based on page section headings
-• Taxonomy to show platform support for components
+• taxonomy to show platform support for components
 • responsive primary and secondary navigations
-• Simple white labelled sub theme that uses LocalGov Base as its base theme
+• simple white labelled sub theme that uses LocalGov Base as its base theme
+• improved functionality for editors with page sections paragraph type and automatic contents menus
