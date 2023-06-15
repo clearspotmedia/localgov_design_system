@@ -9,7 +9,7 @@ This theme inlcudes the necessary CSS and twig templates to make the CDS Design 
 https://github.com/clearspotmedia/cds_design_system
 
 ## What the theme does
-When running both the the Design System theme and module, you will have access to a new design system content type. Your can assig as parent and child pages, creating sections. These sections and child pages are output into well considered responsive menus for navigation.
+When running both the the Design System theme and module, you will have access to a new design system content type. Your can assign parent and child pages, creating sections. These sections and child pages are output into well considered responsive menus for navigation.
 
 The front end interface closely replicates the GDS design system navigation structure.  https://design-system.service.gov.uk/
 
