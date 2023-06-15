@@ -1,4 +1,4 @@
-# localgov_design_system_theme
+# Design System theme for LocalGov sites
 Subtheme for a Design System that uses localgov_base as the base theme.
 
 ## LocalGov Design System Whitelabel
