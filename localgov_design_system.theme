@@ -4,3 +4,13 @@
  * @file
  * Theme function for the LocalGov Design System theme.
  */
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * - Hides the feed icon and link from the Taxonomy term listing page view.
+ */
+function localgov_design_system_preprocess_views_view__taxonomy_term__page_1(&$vars) {
+
+  unset($vars['feed_icons']);
+}
