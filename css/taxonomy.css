@@ -12,8 +12,3 @@
   display: inline;
   margin-right: var(--spacing);
 }
-
-/* Hide RSS subscribe link on taxonomy page */
-.feed-icons {
-  display: none;
-}
