@@ -108,10 +108,16 @@
     <div class="lgd-container">
       <div class="lgd-row">
         {% if has_sidebar_first and not has_sidebar_second %}
-          <aside class="lgd-row__one-third sidebar sidebar--first">
-            {{ page.sidebar_first }}
-          </aside>
+          {% if not is_front %}
+            <aside class="lgd-row__one-third sidebar sidebar--first">
+              {{ page.sidebar_first }}
+            </aside>
+          {% endif %}
+          {% if not is_front %}
           <div class="lgd-row__two-thirds">
+          {% else %}
+          <div class="lgd-row__full">
+          {% endif %}
             <div class="padding-horizontal">
               {{ page.content_top }}
               {{ page.content }}
@@ -120,30 +126,44 @@
         {% endif %}
 
         {% if has_sidebar_second and not has_sidebar_first %}
+          {% if not is_front %}
           <div class="lgd-row__two-thirds">
+          {% else %}
+          <div class="lgd-row__full">
+          {% endif %}
             <div class="padding-horizontal">
               {{ page.content_top }}
               {{ page.content }}
             </div>
           </div>
-          <aside class="lgd-row__one-third sidebar sidebar--second">
-            {{ page.sidebar_second }}
-          </aside>
+          {% if not is_front %}
+            <aside class="lgd-row__one-third sidebar sidebar--second">
+              {{ page.sidebar_second }}
+            </aside>
+          {% endif %}
         {% endif %}
 
         {% if has_sidebar_first and has_sidebar_second %}
-          <aside class="lgd-row__one-quarter sidebar sidebar--first">
-            {{ page.sidebar_first }}
-          </aside>
+          {% if not is_front %}
+            <aside class="lgd-row__one-quarter sidebar sidebar--first">
+              {{ page.sidebar_first }}
+            </aside>
+          {% endif %}
+          {% if not is_front %}
           <div class="lgd-row__one-half">
+          {% else %}
+          <div class="lgd-row__full">
+          {% endif %}
             <div class="padding-horizontal">
               {{ page.content_top }}
               {{ page.content }}
             </div>
           </div>
-          <aside class="lgd-row__one-quarter sidebar sidebar--second">
-            {{ page.sidebar_second }}
-          </aside>
+          {% if not is_front %}
+            <aside class="lgd-row__one-quarter sidebar sidebar--second">
+              {{ page.sidebar_second }}
+            </aside>
+          {% endif %}
         {% endif %}
       </div>
     </div>
