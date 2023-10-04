@@ -14,8 +14,3 @@
   color: var(--color-white);
   font-size: var(--font-size-h3);
 }
-
-/* Don't apply microsite grid padding on design system pages */
-.page-node-type-cds-design-system .padding-horizontal {
-  padding: 0;
-}

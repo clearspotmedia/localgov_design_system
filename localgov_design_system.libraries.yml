@@ -8,6 +8,11 @@ variables:
 
 # New css files for design system interface
 # This is called in localgov_design_system.info.yml file via `libraries`.
+resets:
+  css:
+    theme:
+      css/resets.css: { weight: 200 }
+      
 site-branding:
   css:
     theme:

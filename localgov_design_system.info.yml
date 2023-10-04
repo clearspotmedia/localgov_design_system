@@ -13,6 +13,7 @@ libraries-extend:
     # - localgov_design_system/other-library-to-load-on-every-page
 
 libraries:
+  - localgov_design_system/resets
   - localgov_design_system/site-branding
   - localgov_design_system/primary-menu
   - localgov_design_system/secondary-menu
