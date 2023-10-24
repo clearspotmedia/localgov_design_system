@@ -22,3 +22,8 @@ Summary of features with both theme and module installed:
 * taxonomy to show platform support for components
 * responsive primary and secondary navigations
 * simple white labelled sub theme that uses LocalGov Base as its base theme
+
+
+## Installation steps
+1. Download this theme and place it inside the `themes/custom/` directory of your site.
+Activate the theme in your microsite after you have installed the Design System Module.
