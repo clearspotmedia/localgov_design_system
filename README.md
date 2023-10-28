@@ -27,9 +27,11 @@ Summary of features with both theme and module installed:
 
 ## Installation steps
 1. Download this theme and place it inside the `themes/custom/` directory of your site.
-Activate the theme in your microsite after you have installed the Design System Module.
 
 You must install this theme before the [Design System Module](https://github.com/clearspotmedia/cds_design_system)
 
 ### Follow the intsallation steps in the wiki
 [https://github.com/clearspotmedia/localgov_design_system/wiki](https://github.com/clearspotmedia/localgov_design_system/wiki)
+
+### Demo
+[Design system child page with section headings](https://design-system.croydon.gov.uk/components/checkboxes)
