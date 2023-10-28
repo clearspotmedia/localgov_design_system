@@ -7,6 +7,10 @@ This theme inlcudes the necessary CSS and twig templates to make the CDS Design 
 ### Read aout the module before using this theme!
 [https://github.com/clearspotmedia/cds_design_system](https://github.com/clearspotmedia/cds_design_system)
 
+### Follow the intsallation steps in the wiki
+[https://github.com/clearspotmedia/localgov_design_system/wiki](https://github.com/clearspotmedia/localgov_design_system/wiki)
+
+
 ## What the theme does
 When running both the the Design System theme and module, you will have access to a new design system content type. Your can assign parent and child pages, creating sections. These sections and child pages are output into well considered responsive menus for navigation.
 
